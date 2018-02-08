@@ -1,0 +1,3 @@
+PyYaml python3-yaml; PEP386
+pyzmq python3-zmq; PEP386
+requests python3-requests; PEP386

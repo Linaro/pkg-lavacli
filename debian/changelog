@@ -1,0 +1,6 @@
+lavacli (0.7-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #887476: ITP: lavacli -- LAVA XML-RPC
+    command line interface)
+
+ -- Senthil Kumaran S (stylesen) <stylesen@gmail.com>  Thu, 08 Feb 2018 11:42:30 +0530
