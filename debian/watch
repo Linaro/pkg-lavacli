@@ -1,4 +1,4 @@
 # Compulsory line, this is a version 3 file
 version=3
 
-https://git.linaro.org/lava/lavacli.git/refs /lava/lavacli.git/snapshot/lavacli-v(\d+.\d+.\d?)\d*.*.tar.gz
+https://git.linaro.org/lava/lavacli.git/refs /lava/lavacli.git/snapshot/lavacli-(\d*.*).tar.gz
