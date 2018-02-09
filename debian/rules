@@ -5,7 +5,7 @@ export PYBUILD_NAME=lavacli
 	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_clean::
-	$(RM) -r lavacli.egg-info/ build/ dist/
+	$(RM) -r lavacli.egg-info/ build/ dist/ .pybuild/
 	find . -name '*.pyc' -exec $(RM) -f {} +
 	find . -name '*.pyo' -exec $(RM) -f {} +
 	find . -name '*~' -exec rm $(RM) {} +
