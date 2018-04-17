@@ -1,11 +1,25 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
 export PYBUILD_NAME=lavacli
+
+export BUILD_DATE=$(shell LC_ALL=C date -u "+%B %d, %Y" -d @"$(SOURCE_DATE_EPOCH)")
+
+
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
+override_dh_auto_build:
+	python3 setup.py build
+	make -C doc/ man SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
+
+override_dh_auto_install:
+	python3 setup.py install --root=$(CURDIR)/debian/lava-server/ --install-layout=deb
+	dh_installman -plavacli doc/_build/man/lavacli.1
+
 override_dh_auto_clean::
-	$(RM) -r lavacli.egg-info/ build/ dist/ .pybuild/
+	$(RM) -r lavacli.egg-info/ build/ dist/ .pybuild/ doc/_build
 	find . -name '*.pyc' -exec $(RM) -f {} +
 	find . -name '*.pyo' -exec $(RM) -f {} +
 	find . -name '*~' -exec rm $(RM) {} +
