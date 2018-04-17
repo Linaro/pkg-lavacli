@@ -15,7 +15,7 @@ override_dh_auto_build:
 	make -C doc/ man SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
 
 override_dh_auto_install:
-	python3 setup.py install --root=$(CURDIR)/debian/lava-server/ --install-layout=deb
+	python3 setup.py install --root=$(CURDIR)/debian/lavacli/ --install-layout=deb
 	dh_installman -plavacli doc/_build/man/lavacli.1
 
 override_dh_auto_clean::
