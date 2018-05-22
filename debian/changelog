@@ -1,3 +1,12 @@
+lavacli (0.9.2-1) unstable; urgency=medium
+
+  * 0.9.2-1 New upstream release.
+  * Add autopkgtest.
+  * Update X-Python-Version.
+  * Add pytest dependencies for running tests.
+
+ -- Senthil Kumaran S (stylesen) <stylesen@gmail.com>  Tue, 22 May 2018 14:04:24 +0530
+
 lavacli (0.8-1) unstable; urgency=medium
 
   * 0.8-1 New upstream release

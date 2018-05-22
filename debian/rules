@@ -2,6 +2,9 @@
 
 include /usr/share/dpkg/pkg-info.mk
 
+# Prevent setuptools/distribute from accessing the internet.
+export http_proxy = http://127.0.9.1:9
+
 export PYBUILD_NAME=lavacli
 
 export BUILD_DATE=$(shell LC_ALL=C date -u "+%B %d, %Y" -d @"$(SOURCE_DATE_EPOCH)")
@@ -9,6 +12,9 @@ export BUILD_DATE=$(shell LC_ALL=C date -u "+%B %d, %Y" -d @"$(SOURCE_DATE_EPOCH
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	python3 setup.py pytest
 
 override_dh_auto_build:
 	python3 setup.py build
