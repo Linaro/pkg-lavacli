@@ -4,9 +4,10 @@ Uploaders: Senthil Kumaran S (stylesen) <stylesen@gmail.com>,
  Neil Williams <codehelp@debian.org>
 Section: admin
 Priority: optional
-Build-Depends: debhelper (>= 10), dh-python, python3 | python3-all,
-  python3-setuptools, python3-requests, python3-yaml, python3-zmq,
-  python3-jinja2, python3-sphinx, python3-pytest-runner, python3-pytest
+Build-Depends: debhelper (>= 10), dh-python, python3,
+ python3-setuptools, python3-requests, python3-yaml,
+ python3-zmq, python3-jinja2, python3-sphinx,
+ python3-pytest-runner, python3-pytest
 X-Python-Version: >= 3.6
 Standards-Version: 4.1.4
 Homepage: https://www.linaro.org/initiatives/lava/

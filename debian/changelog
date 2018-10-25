@@ -1,3 +1,9 @@
+lavacli (0.9.2-2) unstable; urgency=medium
+
+  * Remove build-dep on python3-all (Closes: #911550)
+
+ -- Neil Williams <codehelp@debian.org>  Thu, 25 Oct 2018 13:50:23 +0100
+
 lavacli (0.9.2-1) unstable; urgency=medium
 
   * 0.9.2-1 New upstream release.
