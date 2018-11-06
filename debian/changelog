@@ -4,6 +4,8 @@ lavacli (0.9.3-1) unstable; urgency=medium
     * a future proof versionning support
     * use black code format
     * allow to use --verbose and --since for job listing
+  * Update homepage
+  * Update standards version (no changes)
 
  -- Neil Williams <codehelp@debian.org>  Tue, 06 Nov 2018 08:41:22 +0000
 
