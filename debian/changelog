@@ -1,3 +1,9 @@
+lavacli (0.9.3-1~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Neil Williams <codehelp@debian.org>  Thu, 08 Nov 2018 11:06:58 +0000
+
 lavacli (0.9.3-1) unstable; urgency=medium
 
   * New upstream release 
