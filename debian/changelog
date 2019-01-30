@@ -1,3 +1,12 @@
+lavacli (0.9.4-1) unstable; urgency=medium
+
+  * New upstream release
+    "utils templates render" to render jinja2 templates
+    "jobs queue" to show the current queue for some device-types
+    (needs lava 2019.01)
+
+ -- Neil Williams <codehelp@debian.org>  Wed, 30 Jan 2019 12:06:40 +0000
+
 lavacli (0.9.3-1) unstable; urgency=medium
 
   * New upstream release 
